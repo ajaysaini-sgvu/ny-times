@@ -5,6 +5,7 @@ import ArticlesActions from 'App/Stores/Articles/Actions'
 import Style from './ArticlesScreenStyle'
 import CONSTANTS from './Labels'
 import Article from 'App/Components/Article'
+import NavigationService from 'App/Services/NavigationService'
 
 /**
  * Articles Screen - To display a list of articles
@@ -24,13 +25,17 @@ class ArticlesScreen extends React.Component {
     fetchArticles()
   }
 
+  onArticleClick = (article) => {
+    NavigationService.navigateAndReset('ArticleDetailScreen', { article })
+  }
+
   render() {
     const { articles } = this.props
     return (
       <View style={Style.container}>
         <FlatList
           data={articles}
-          renderItem={({ item }) => <Article article={item} />}
+          renderItem={({ item }) => <Article article={item} onArticleClick={this.onArticleClick} />}
           keyExtractor={(item) => item.id.toString()}
           showsVerticalScrollIndicator={false}
         />

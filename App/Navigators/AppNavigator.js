@@ -1,6 +1,7 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation'
 
 import ArticlesScreen from 'App/Containers/Articles/ArticlesScreen'
+import ArticleDetailScreen from 'App/Containers/ArticleDetail/ArticleDetailScreen'
 import SplashScreen from 'App/Containers/SplashScreen/SplashScreen'
 
 /**
@@ -16,6 +17,7 @@ const StackNavigator = createStackNavigator(
     // The main application screen is our "ArticlesScreen". Feel free to replace it with your
     // own screen and remove the example.
     MainScreen: ArticlesScreen,
+    ArticleDetailScreen: ArticleDetailScreen,
   },
   {
     // By default the application will show the splash screen
