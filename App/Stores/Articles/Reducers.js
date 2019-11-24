@@ -16,7 +16,7 @@ export const fetchArticlesLoading = (state) => ({
 
 export const fetchArticlesSuccess = (state, { articles }) => ({
   ...state,
-  articles,
+  ...articles,
   articlesIsLoading: false,
   articlesErrorMessage: null,
 })
