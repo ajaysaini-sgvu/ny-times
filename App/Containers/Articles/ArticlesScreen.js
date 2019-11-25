@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, ActivityIndicator } from 'react-native'
 import { connect } from 'react-redux'
 import ArticlesActions from 'App/Stores/Articles/Actions'
 import Style from './ArticlesScreenStyle'
@@ -11,7 +11,7 @@ import NavigationService from 'App/Services/NavigationService'
  * Articles Screen - To display a list of articles
  */
 
-class ArticlesScreen extends React.Component {
+export class ArticlesScreen extends React.Component {
   static navigationOptions = {
     title: CONSTANTS.LBL_NAVIGATION_TITLE,
     headerStyle: {
@@ -30,9 +30,10 @@ class ArticlesScreen extends React.Component {
   }
 
   render() {
-    const { articles } = this.props
+    const { articles, articlesIsLoading } = this.props
     return (
       <View style={Style.container}>
+        {articlesIsLoading ? <ActivityIndicator size="large" color="#0000ff" /> : null}
         <FlatList
           data={articles}
           renderItem={({ item }) => <Article article={item} onArticleClick={this.onArticleClick} />}
@@ -51,6 +52,7 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => {
   return {
     articles: state.articles.results,
+    articlesIsLoading: state.articles.articlesIsLoading,
   }
 }
 
