@@ -2,7 +2,6 @@
  * @format
  */
 
-import 'react-native'
 import React from 'react'
 import ArticleDetail from '../ArticleDetailScreen'
 
@@ -11,11 +10,13 @@ import renderer from 'react-test-renderer'
 
 jest.useFakeTimers()
 
-it('renders correctly', async () => {
-  const props = {
-    navigation: {
-      getParam: jest.fn,
-    },
-  }
-  renderer.create(<ArticleDetail {...props} />)
+describe('test article detail screen', () => {
+  it('renders correctly', () => {
+    const props = {
+      navigation: {
+        getParam: jest.fn,
+      },
+    }
+    renderer.create(<ArticleDetail {...props} />)
+  })
 })

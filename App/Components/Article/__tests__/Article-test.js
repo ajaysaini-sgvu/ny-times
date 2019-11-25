@@ -2,7 +2,7 @@
  * @format
  */
 
-import 'react-native'
+import { TouchableOpacity } from 'react-native'
 import React from 'react'
 import Article from '../Article'
 
@@ -11,21 +11,23 @@ import renderer from 'react-test-renderer'
 
 jest.useFakeTimers()
 
-const props = {
-  article: {
-    title: '',
-    byline: '',
-    published_date: '',
-    onArticleClick: jest.fn,
-  },
-}
+describe('test article component', () => {
+  const props = {
+    article: {
+      title: '',
+      byline: '',
+      published_date: '',
+    },
+  }
 
-it('renders correctly', async () => {
-  renderer.create(<Article {...props} />)
-})
+  it('renders correctly', () => {
+    renderer.create(<Article {...props} />)
+  })
 
-it('simulate onPress article', async () => {
-  const testRenderer = renderer.create(<Article {...props} />)
-  const testInstance = testRenderer.root
-  expect(testInstance.findByType(TouchableOpacity)).toBe('bar')
+  it('simulate onPress article', () => {
+    const mockFunction = jest.fn()
+    const testRenderer = renderer.create(<Article {...props} onArticleClick={mockFunction} />)
+    testRenderer.root.findByType(TouchableOpacity).props.onPress()
+    expect(mockFunction).toHaveBeenCalled()
+  })
 })

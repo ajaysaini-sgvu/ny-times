@@ -2,7 +2,6 @@
  * @format
  */
 
-import 'react-native'
 import React from 'react'
 import { ArticlesScreen } from '../ArticlesScreen'
 
@@ -11,9 +10,12 @@ import renderer from 'react-test-renderer'
 
 jest.useFakeTimers()
 
-it('renders correctly', async () => {
+describe('test article screen', () => {
   const props = {
     fetchArticles: jest.fn,
   }
-  renderer.create(<ArticlesScreen {...props} />)
+
+  it('renders correctly', () => {
+    renderer.create(<ArticlesScreen {...props} />)
+  })
 })

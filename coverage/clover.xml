@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1574616504296" clover="3.2.0">
-  <project timestamp="1574616504296" name="All files">
-    <metrics statements="77" coveredstatements="63" conditionals="11" coveredconditionals="2" methods="34" coveredmethods="24" elements="122" coveredelements="89" complexity="0" loc="77" ncloc="77" packages="15" files="30" classes="30"/>
+<coverage generated="1574706101484" clover="3.2.0">
+  <project timestamp="1574706101484" name="All files">
+    <metrics statements="77" coveredstatements="71" conditionals="11" coveredconditionals="10" methods="34" coveredmethods="27" elements="122" coveredelements="108" complexity="0" loc="77" ncloc="77" packages="15" files="30" classes="30"/>
     <package name="App">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.js" path="/Users/ajasaini1/Project/ny-times/App/App.js">
@@ -18,13 +18,13 @@
       </file>
     </package>
     <package name="App.Components.Article">
-      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Article.js" path="/Users/ajasaini1/Project/ny-times/App/Components/Article/Article.js">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
       <file name="ArticleStyle.js" path="/Users/ajasaini1/Project/ny-times/App/Components/Article/ArticleStyle.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -37,7 +37,7 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/Users/ajasaini1/Project/ny-times/App/Config/index.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
       </file>
     </package>
     <package name="App.Containers.ArticleDetail">
@@ -115,14 +115,14 @@
       </file>
     </package>
     <package name="App.Sagas">
-      <metrics statements="8" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="ArticlesSaga.js" path="/Users/ajasaini1/Project/ny-times/App/Sagas/ArticlesSaga.js">
-        <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="StartupSaga.js" path="/Users/ajasaini1/Project/ny-times/App/Sagas/StartupSaga.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -135,19 +135,19 @@
       </file>
     </package>
     <package name="App.Services">
-      <metrics statements="13" coveredstatements="7" conditionals="7" coveredconditionals="0" methods="6" coveredmethods="3"/>
+      <metrics statements="13" coveredstatements="11" conditionals="7" coveredconditionals="6" methods="6" coveredmethods="5"/>
       <file name="ArticlesService.js" path="/Users/ajasaini1/Project/ny-times/App/Services/ArticlesService.js">
-        <metrics statements="10" coveredstatements="5" conditionals="7" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="cond" truecount="0" falsecount="5"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="30" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="9" conditionals="7" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="5" falsecount="0"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="1" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
       </file>
       <file name="NavigationService.js" path="/Users/ajasaini1/Project/ny-times/App/Services/NavigationService.js">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
@@ -182,8 +182,8 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="Actions.js" path="/Users/ajasaini1/Project/ny-times/App/Stores/Articles/Actions.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
       </file>
       <file name="InitialState.js" path="/Users/ajasaini1/Project/ny-times/App/Stores/Articles/InitialState.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
