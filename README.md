@@ -7,7 +7,6 @@ Sample app to show a list of articles, that shows details when items on the list
 Assuming you have all the requirements installed, you can setup and run the project by running:
 
 - `yarn install` to install the dependencies
-- create your [configuration file `App/Config/index.js`](App/Config) from `index.dev.js` (in you are in dev environment) and fill the missing values
 - run the following steps for your platform
 
 ### iOS
