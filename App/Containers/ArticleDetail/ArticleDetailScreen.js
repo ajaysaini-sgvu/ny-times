@@ -10,19 +10,14 @@ import Style from './ArticleDetailStyle'
  */
 
 class ArticleDetailScreen extends React.Component {
-  static navigationOptions = {
+  static navigationOptions = ({ navigation }) => ({
     title: CONSTANTS.LBL_NAVIGATION_TITLE,
     headerStyle: {
       backgroundColor: '#34ebd2',
     },
     headerTintColor: '#fff',
-    headerLeft: (
-      <HeaderBackButton
-        tintColor="#fff"
-        onPress={() => NavigationService.navigateAndReset('MainScreen')}
-      />
-    ),
-  }
+    headerLeft: <HeaderBackButton tintColor="#fff" onPress={() => navigation.goBack(null)} />,
+  })
 
   render() {
     const { navigation } = this.props

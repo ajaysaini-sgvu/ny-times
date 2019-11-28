@@ -26,7 +26,7 @@ export class ArticlesScreen extends React.Component {
   }
 
   onArticleClick = (article) => {
-    NavigationService.navigateAndReset('ArticleDetailScreen', { article })
+    NavigationService.navigate('ArticleDetailScreen', { article })
   }
 
   render() {
