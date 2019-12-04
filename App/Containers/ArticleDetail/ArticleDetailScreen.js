@@ -9,7 +9,7 @@ import Style from './ArticleDetailStyle'
  * Article Detail Screen - To display a article detail
  */
 
-class ArticleDetailScreen extends React.Component {
+class ArticleDetailScreen extends React.PureComponent {
   static navigationOptions = ({ navigation }) => ({
     title: CONSTANTS.LBL_NAVIGATION_TITLE,
     headerStyle: {
